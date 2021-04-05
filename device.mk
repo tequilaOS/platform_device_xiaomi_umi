@@ -407,6 +407,9 @@ PRODUCT_COPY_FILES += \
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
 
+# Storage
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 # Telephony
 PRODUCT_PACKAGES += \
     extphonelib \
