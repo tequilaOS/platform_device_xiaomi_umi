@@ -25,6 +25,10 @@ SOONG_CONFIG_XIAOMI_KONA_FOD_SIZE = 202
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_lmi
+TARGET_RECOVERY_DEVICE_MODULES := libinit_lmi
+
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/lmi_defconfig
 
