@@ -29,5 +29,8 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_lmi
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/lmi_defconfig
 
+# OTA assert
+TARGET_OTA_ASSERT_DEVICE := lmi,lmipro
+
 # Inherit from the proprietary version
 include vendor/xiaomi/lmi/BoardConfigVendor.mk
