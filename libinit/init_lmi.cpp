@@ -14,8 +14,8 @@ static const variant_info_t lmi_info = {
     .device = "lmi",
     .marketname = "",
     .model = "POCO F2 Pro",
-    .build_description = "lmi-user 11 RKQ1.200826.002 V12.2.6.0.RJKMIXM release-keys",
-    .build_fingerprint = "POCO/lmi_global/lmi:11/RKQ1.200826.002/V12.2.6.0.RJKMIXM:user/release-keys",
+    .build_description = "lmi-user 11 RKQ1.200826.002 V12.5.1.0.RJKMIXM release-keys",
+    .build_fingerprint = "POCO/lmi_global/lmi:11/RKQ1.200826.002/V12.5.1.0.RJKMIXM:user/release-keys",
 };
 
 static const variant_info_t lmipro_info = {
@@ -26,8 +26,8 @@ static const variant_info_t lmipro_info = {
     .device = "lmipro",
     .marketname = "",
     .model = "Redmi K30 Pro Zoom Edition",
-    .build_description = "lmipro-user 11 RKQ1.200826.002 V12.2.6.0.RJKMIXM release-keys",
-    .build_fingerprint = "Redmi/lmipro/lmipro:11/RKQ1.200826.002/V12.2.6.0.RJKMIXM:user/release-keys",
+    .build_description = "lmipro-user 11 RKQ1.200826.002 V12.5.1.0.RJKMIXM release-keys",
+    .build_fingerprint = "Redmi/lmipro/lmipro:11/RKQ1.200826.002/V12.5.1.0.RJKMIXM:user/release-keys",
 };
 
 static const std::vector<variant_info_t> variants = {
