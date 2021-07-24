@@ -7,8 +7,8 @@
 #include <libinit_kona.h>
 
 static const variant_info_t lmi_info = {
-    .prop_key = "ro.boot.product.hardware.sku",
-    .prop_value = "std",
+    .hwc_value = "",
+    .sku_value = "std",
 
     .brand = "POCO",
     .device = "lmi",
@@ -16,11 +16,13 @@ static const variant_info_t lmi_info = {
     .model = "POCO F2 Pro",
     .build_description = "lmi-user 11 RKQ1.200826.002 V12.5.1.0.RJKMIXM release-keys",
     .build_fingerprint = "POCO/lmi_global/lmi:11/RKQ1.200826.002/V12.5.1.0.RJKMIXM:user/release-keys",
+
+    .nfc = true,
 };
 
 static const variant_info_t lmipro_info = {
-    .prop_key = "ro.boot.product.hardware.sku",
-    .prop_value = "pro",
+    .hwc_value = "",
+    .sku_value = "pro",
 
     .brand = "Redmi",
     .device = "lmipro",
@@ -28,6 +30,8 @@ static const variant_info_t lmipro_info = {
     .model = "Redmi K30 Pro Zoom Edition",
     .build_description = "lmipro-user 11 RKQ1.200826.002 V12.5.1.0.RJKMIXM release-keys",
     .build_fingerprint = "Redmi/lmipro/lmipro:11/RKQ1.200826.002/V12.5.1.0.RJKMIXM:user/release-keys",
+
+    .nfc = true,
 };
 
 static const std::vector<variant_info_t> variants = {
