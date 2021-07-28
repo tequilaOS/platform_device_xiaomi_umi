@@ -370,10 +370,6 @@ media/audio/ui/popup_muqin_up.ogg
 media/audio/ui/popup_yingyan_down.ogg
 media/audio/ui/popup_yingyan_up.ogg
 
-# Charger
-vendor/bin/batterysecret
-vendor/etc/init/init.batterysecret.rc
-
 # Display
 vendor/etc/qdcm_calib_data_xiaomi_j11_38_08_0a_fhd_panel.xml
 
