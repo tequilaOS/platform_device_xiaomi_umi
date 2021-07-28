@@ -32,5 +32,8 @@ TARGET_KERNEL_CONFIG := vendor/lmi_defconfig
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := lmi,lmipro
 
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # Inherit from the proprietary version
 include vendor/xiaomi/lmi/BoardConfigVendor.mk
