@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_lmi.mk
+    $(LOCAL_DIR)/lineage_umi.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_lmi-user \
-    lineage_lmi-userdebug \
-    lineage_lmi-eng
+    lineage_umi-user \
+    lineage_umi-userdebug \
+    lineage_umi-eng

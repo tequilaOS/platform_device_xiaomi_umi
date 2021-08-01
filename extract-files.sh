@@ -14,7 +14,7 @@ fi
 
 set -e
 
-export DEVICE=lmi
+export DEVICE=umi
 export DEVICE_COMMON=sm8250-common
 export VENDOR=xiaomi
 

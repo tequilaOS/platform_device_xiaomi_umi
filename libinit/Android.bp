@@ -5,8 +5,8 @@
 //
 
 cc_library_static {
-    name: "init_xiaomi_lmi",
-    srcs: ["init_xiaomi_lmi.cpp"],
+    name: "init_xiaomi_umi",
+    srcs: ["init_xiaomi_umi.cpp"],
     whole_static_libs: ["//device/xiaomi/sm8250-common:libinit_xiaomi_kona"],
     include_dirs: ["system/core/init"],
     recovery_available: true,

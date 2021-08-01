@@ -261,8 +261,8 @@
         <ctl name="VA SMIC MUX1" value="ADC0" />
         <ctl name="ADC1_MIXER Switch" value="1" />
         <ctl name="ADC1 Volume" value="6" />
-        <ctl name="VA_DEC0 Volume" value="95" />
-        <ctl name="VA_DEC1 Volume" value="90" />
+        <ctl name="VA_DEC0 Volume" value="102" />
+        <ctl name="VA_DEC1 Volume" value="102" />
     </path>
 
     <path name="listen-ape-handset-tmic">
@@ -305,8 +305,8 @@
     </path>
 
     <path name="echo-reference">
-        <ctl name="AUDIO_REF_EC_UL1 MUX" value="I2S_RX"/>
-        <ctl name="EC Reference Channels" value="One"/>
+        <ctl name="AUDIO_REF_EC_UL1 MUX" value="TERT_MI2S_TX"/>
+        <ctl name="EC Reference Channels" value="Two"/>
         <ctl name="EC Reference Bit Format" value="S24_LE"/>
         <ctl name="EC Reference SampleRate" value="48000"/>
     </path>

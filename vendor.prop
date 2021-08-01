@@ -29,10 +29,7 @@ ro.surface_flinger.use_color_management=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
 
 # Fingerprint
-vendor.lineage.fod.position_x=439
-vendor.lineage.fod.position_y=1655
-vendor.lineage.fod.size=202
+vendor.lineage.fod.position_x=441
+vendor.lineage.fod.position_y=1808
+vendor.lineage.fod.size=197
 vendor.lineage.fod.enable=true
-
-# Motor
-vendor.lineage.motor.enable=true
