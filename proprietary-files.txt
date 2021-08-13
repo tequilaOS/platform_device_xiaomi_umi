@@ -1,4 +1,4 @@
-# Unpinned blobs from lmi-user 11 RKQ1.200826.002 V12.5.1.0.RJKMIXM release-keys
+# Unpinned blobs from lmi-user 11 RKQ1.200826.002 V12.5.2.0.RJKMIXM release-keys
 
 # ACDB
 vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
