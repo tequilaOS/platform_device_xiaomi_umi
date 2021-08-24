@@ -4,7 +4,10 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#include <libinit_kona.h>
+#include <libinit_dalvik_heap.h>
+#include <libinit_variant.h>
+
+#include "vendor_init.h"
 
 static const variant_info_t lmi_info = {
     .hwc_value = "",
@@ -14,7 +17,6 @@ static const variant_info_t lmi_info = {
     .device = "lmi",
     .marketname = "",
     .model = "POCO F2 Pro",
-    .build_description = "lmi-user 11 RKQ1.200826.002 V12.5.2.0.RJKMIXM release-keys",
     .build_fingerprint = "POCO/lmi_global/lmi:11/RKQ1.200826.002/V12.5.2.0.RJKMIXM:user/release-keys",
 
     .nfc = true,
@@ -28,7 +30,6 @@ static const variant_info_t lmipro_info = {
     .device = "lmipro",
     .marketname = "",
     .model = "Redmi K30 Pro Zoom Edition",
-    .build_description = "lmipro-user 11 RKQ1.200826.002 V12.5.2.0.RJKMIXM release-keys",
     .build_fingerprint = "Redmi/lmipro/lmipro:11/RKQ1.200826.002/V12.5.2.0.RJKMIXM:user/release-keys",
 
     .nfc = true,
