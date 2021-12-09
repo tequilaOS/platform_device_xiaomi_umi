@@ -27,3 +27,8 @@ ro.surface_flinger.has_HDR_display=true
 ro.surface_flinger.has_wide_color_display=true
 ro.surface_flinger.use_color_management=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
+
+# Fingerprint
+vendor.lineage.fod.position_x=439
+vendor.lineage.fod.position_y=1655
+vendor.lineage.fod.size=202
