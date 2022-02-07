@@ -5,6 +5,7 @@
  */
 
 #include <libinit_dalvik_heap.h>
+#include <libinit_utils.h>
 #include <libinit_variant.h>
 
 #include "vendor_init.h"
@@ -25,4 +26,6 @@ static const variant_info_t umi_info = {
 void vendor_load_properties() {
     set_variant_props(umi_info);
     set_dalvik_heap();
+
+    property_override("persist.radio.multisim.config", "ssss");
 }
