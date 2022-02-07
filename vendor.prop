@@ -1,6 +1,8 @@
 # Audio
-persist.vendor.audio.hifi=false
-ro.vendor.audio.hifi=true
+ro.audio.monitorRotation=true
+ro.vendor.audio.afe.record=true
+ro.vendor.audio.aiasst.support=true
+ro.vendor.audio.multiroute=true
 ro.vendor.audio.sfx.audiovisual=true
 ro.vendor.audio.soundtrigger.appdefine.cnn.level=35
 ro.vendor.audio.soundtrigger.appdefine.gmm.level=55
@@ -8,6 +10,7 @@ ro.vendor.audio.soundtrigger.appdefine.gmm.user.level=65
 ro.vendor.audio.soundtrigger.appdefine.vop.level=10
 ro.vendor.audio.soundtrigger.lowpower=true
 ro.vendor.audio.soundtrigger.snr=16
+ro.vendor.audio.soundtrigger=sva
 ro.vendor.audio.soundtrigger.training.level=50
 ro.vendor.audio.soundtrigger.xanzn.cnn.level=80
 ro.vendor.audio.soundtrigger.xanzn.gmm.level=45
@@ -17,10 +20,12 @@ ro.vendor.audio.soundtrigger.xatx.cnn.level=27
 ro.vendor.audio.soundtrigger.xatx.gmm.level=50
 ro.vendor.audio.soundtrigger.xatx.gmm.user.level=40
 ro.vendor.audio.soundtrigger.xatx.vop.level=10
-ro.vendor.audio.soundtrigger=sva
-ro.vendor.audio.voice.volume.boost=none
-vendor.audio.mic.status=off
-vendor.audio.spkr_prot.tx.sampling_rate=48000
+ro.vendor.audio.spk.stereo=true
+ro.vendor.audio.voice.volume.boost=manual
+vendor.audio.adm.buffering.ms=6
+vendor.audio.feature.compr_voip.enable=false
+vendor.audio_hal.period_multiplier=3
+vendor.audio.offload.buffer.size.kb=32
 
 # Display
 ro.surface_flinger.has_HDR_display=true
