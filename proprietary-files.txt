@@ -1,17 +1,19 @@
-# Unpinned blobs from lmi-user 11 RKQ1.200826.002 V12.5.3.0.RJKMIXM release-keys
+# Unpinned blobs from umi-user 11 RKQ1.200826.002 V12.5.10.0.RJBCNXM release-keys
 
 # ACDB
-vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_General_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_Global_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_Handset_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_Hdmi_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_Headset_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_Speaker_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp
+vendor/etc/acdbdata/Tutu/Tutu_Bluetooth_cal.acdb
+vendor/etc/acdbdata/Tutu/Tutu_General_cal.acdb
+vendor/etc/acdbdata/Tutu/Tutu_Global_cal.acdb
+vendor/etc/acdbdata/Tutu/Tutu_Handset_cal.acdb
+vendor/etc/acdbdata/Tutu/Tutu_Hdmi_cal.acdb
+vendor/etc/acdbdata/Tutu/Tutu_Headset_cal.acdb
+vendor/etc/acdbdata/Tutu/Tutu_Speaker_cal.acdb
+vendor/etc/acdbdata/Tutu/Tutu_workspaceFile.qwsp
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # ADSP modules
+vendor/lib/rfsa/adsp/capi_v2_cirrus_sp.so
+vendor/lib/rfsa/adsp/libMIAIHDR_skel.so
 vendor/lib/rfsa/adsp/libQ6MSFR_manager_skel.so
 vendor/lib/rfsa/adsp/libSuperSensor_skel.so
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
@@ -30,6 +32,8 @@ vendor/lib/rfsa/adsp/libhexagon_nn_skel.so
 vendor/lib/rfsa/adsp/libmialgo_rfs_cdsp_skel.so
 vendor/lib/rfsa/adsp/libmobilenet_dsp.so
 vendor/lib/rfsa/adsp/libremosaichvx_skel.so
+vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
+vendor/lib/rfsa/adsp/libscveT2T_skel.so
 vendor/lib/rfsa/adsp/libsnpe_dsp_domains_skel.so
 vendor/lib/rfsa/adsp/libsnpe_dsp_skel.so
 vendor/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so
@@ -41,9 +45,21 @@ vendor/lib/rfsa/adsp/misound_karaokemix_res.bin
 vendor/lib/rfsa/adsp/misound_res.bin
 
 # Audio firmware
-vendor/firmware/tfa98xx.cnt
+vendor/firmware/cs35l41-dsp1-diag-revb2.wmfw
+vendor/firmware/cs35l41-dsp1-diag-z-RCV-revb2.bin
+vendor/firmware/cs35l41-dsp1-diag-z-revb2.bin
+vendor/firmware/cs35l41-dsp1-diag-z-revb2.wmfw
+vendor/firmware/cs35l41-dsp1-diag-z.bin
+vendor/firmware/cs35l41-dsp1-diag-z.wmfw
+vendor/firmware/cs35l41-dsp1-diag.wmfw
+vendor/firmware/cs35l41-dsp1-spk-prot-RCV-revb2.bin
+vendor/firmware/cs35l41-dsp1-spk-prot-RCV.bin
+vendor/firmware/cs35l41-dsp1-spk-prot-revb2.bin
+vendor/firmware/cs35l41-dsp1-spk-prot-revb2.wmfw
+vendor/firmware/cs35l41-dsp1-spk-prot.bin
+vendor/firmware/cs35l41-dsp1-spk-prot.wmfw
 
-# Audio hardware
+# Audio hardware - from lmi
 vendor/lib/hw/audio.primary.kona.so
 vendor/lib/vndk/libxlog.so
 vendor/lib/liba2dpoffload.so
@@ -58,7 +74,7 @@ vendor/lib64/libaudioroute_ext.so
 vendor/lib64/libresampler.so
 vendor/lib64/vendor.qti.hardware.audiohalext@1.0.so
 
-# Camera
+# Camera - from lmi
 vendor/lib64/camera/com.qti.eeprom.lmi_sunny_imx686_gt24p64b.so
 vendor/lib64/camera/com.qti.eeprom.lmi_sunny_imx686_gt24p64b_st.so
 vendor/lib64/camera/com.qti.eeprom.lmi_sunny_ov08a10_gt24p64.so
@@ -298,10 +314,10 @@ vendor/lib64/camera/components/libubifocus.so
 
 # Camera configs
 vendor/etc/camera/misupermoon/MobNetv2TF_0.35_iter200000_zoom2.5x_h1500w2000.dlc
-vendor/etc/camera/CFR_para_HD_V01.bin
-vendor/etc/camera/CFR_para_T_3x_V01.bin
+vendor/etc/camera/CFR_para_HD_V03.bin
+vendor/etc/camera/CFR_para_T_2x_V03.bin
 vendor/etc/camera/CFR_para_UW_V01.bin
-vendor/etc/camera/CFR_para_W_V01.bin
+vendor/etc/camera/CFR_para_W_V03.bin
 vendor/etc/camera/GpuKernelRepo.pb
 vendor/etc/camera/LDC_FPC_TUNING_DATA.bin
 vendor/etc/camera/LDC_FPC_TUNING_DATA_AI.bin
@@ -309,31 +325,42 @@ vendor/etc/camera/LDC_PACKDATA_VENDORID_0x01.bin
 vendor/etc/camera/LDC_PACKDATA_VENDORID_0x03.bin
 vendor/etc/camera/LDC_PACKDATA_VENDORID_0x07.bin
 vendor/etc/camera/ai_enhance.dlc
-vendor/etc/camera/almalence_sr_params_moon_lmi.config
 vendor/etc/camera/almalence_sr_params_tele.config
+vendor/etc/camera/almalence_sr_params_tele4x.config
+vendor/etc/camera/almalence_sr_params_tele4x_iso100.config
+vendor/etc/camera/almalence_sr_params_tele4x_iso100_zoom20x.config
+vendor/etc/camera/almalence_sr_params_tele4x_iso100_zoom30x.config
+vendor/etc/camera/almalence_sr_params_tele4x_iso100_zoom40x.config
+vendor/etc/camera/almalence_sr_params_tele4x_moon.config
+vendor/etc/camera/almalence_sr_params_tele4x_zoom20x.config
+vendor/etc/camera/almalence_sr_params_tele4x_zoom30x.config
+vendor/etc/camera/almalence_sr_params_tele4x_zoom40x.config
+vendor/etc/camera/almalence_sr_params_tele_iso100.config
 vendor/etc/camera/almalence_sr_params_wide.config
+vendor/etc/camera/almalence_sr_params_wide_64M.config
 vendor/etc/camera/beauty_ui9_intelligent_params.config
 vendor/etc/camera/bokehParams.json
 vendor/etc/camera/camxoverridesettings.txt
 vendor/etc/camera/com.xiaomi.dcal.wd.golden
-vendor/etc/camera/com.xiaomi.dcal.wt.fake
 vendor/etc/camera/com.xiaomi.dcal.wu.fake
 vendor/etc/camera/com.xiaomi.dcal.wu.golden
+vendor/etc/camera/deblur_txt_dsp.dlc
+vendor/etc/camera/deblur_txt_gpu.dlc
+vendor/etc/camera/deblur_txt_npu.dlc
 vendor/etc/camera/det_quantize.dlc
 vendor/etc/camera/eisoverridesettings.txt
 vendor/etc/camera/eyelineblush.cng
 vendor/etc/camera/goturn_search_dsp.dlc
 vendor/etc/camera/goturn_target_dsp.dlc
-vendor/etc/camera/hdr_ui9_params.config
 vendor/etc/camera/hdrd_ui9_params.config
 vendor/etc/camera/megviifacepp_0_5_2_model
 vendor/etc/camera/mibokeh_855_opencl.bin
 vendor/etc/camera/mibokeh_855_parameter.bin
 vendor/etc/camera/model.dat
 vendor/etc/camera/model_back.dlc
+vendor/etc/camera/model_back_deblur.dlc
 vendor/etc/camera/model_front.dlc
 vendor/etc/camera/model_front_mibokeh_video.dlc
-vendor/etc/camera/multianchor.txt
 vendor/etc/camera/reid_float.dlc
 vendor/etc/camera/sceneDetection.xml
 vendor/etc/camera/seg_quantized.dlc
@@ -341,29 +368,50 @@ vendor/etc/camera/vidhance_calibration
 
 # Camera firmware
 vendor/firmware/CAMERA_ICP.elf
-vendor/firmware/lmi_tele_lc898124_ois.coeff
-vendor/firmware/lmi_tele_lc898124_ois.prog
-vendor/firmware/lmi_tele_rohm_ois.coeff
-vendor/firmware/lmi_tele_rohm_ois.prog
-vendor/firmware/lmi_wide_ois_ST.coeff
-vendor/firmware/lmi_wide_ois_ST.prog
+vendor/firmware/umi_ois.coeff
+vendor/firmware/umi_ois.prog
 
 # Display
-vendor/etc/qdcm_calib_data_xiaomi_j11_38_08_0a_fhd_panel.xml
+vendor/etc/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.xml
+vendor/etc/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.xml
+vendor/etc/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.xml
+vendor/etc/qdcm_calib_data_Sharp_4k_video_mode_dsc_dsi_panel.xml
+vendor/etc/qdcm_calib_data_Sharp_fhd_cmd_mode_qsync_dsi_panel.xml
+vendor/etc/qdcm_calib_data_Sharp_fhd_video_mode_qsync_dsi_panel.xml
+vendor/etc/qdcm_calib_data_nt35597_cmd_mode_dsi_truly_panel_with_DSC.xml
+vendor/etc/qdcm_calib_data_nt35597_video_mode_dsi_truly_panel_with_DSC.xml
+vendor/etc/qdcm_calib_data_nt35695b_truly_fhd_command_mode_dsi_panel.xml
+vendor/etc/qdcm_calib_data_nt36525_video_mode_dsi_truly_panel.xml
+vendor/etc/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_120HZ_panel_with_DSC.xml
+vendor/etc/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_60HZ_panel_with_DSC.xml
+vendor/etc/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_90HZ_panel_with_DSC.xml
+vendor/etc/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.xml
+vendor/etc/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_120HZ_panel_with_DSC.xml
+vendor/etc/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_60HZ_panel_with_DSC.xml
+vendor/etc/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_90HZ_panel_with_DSC.xml
+vendor/etc/qdcm_calib_data_rm69299_amoled_fhd+_cmd_mode_dsi_visionox_panel.xml
+vendor/etc/qdcm_calib_data_rm69299_amoled_fhd+_video_mode_dsi_visionox_panel.xml
+vendor/etc/qdcm_calib_data_sharp_1080p_cmd_mode_dsi_panel.xml
+vendor/etc/qdcm_calib_data_sw43404_amoled_boe_fhd+_panel_with_DSC.xml
+vendor/etc/qdcm_calib_data_sw43404_amoled_cmd_mode_dsi_boe_panel_with_DSC.xml
+vendor/etc/qdcm_calib_data_sw43404_amoled_video_mode_dsi_boe_panel_with_DSC.xml
+vendor/etc/qdcm_calib_data_td4330_v2_cmd_mode_dsi_truly_panel.xml
+vendor/etc/qdcm_calib_data_td4330_v2_video_mode_dsi_truly_panel.xml
+vendor/etc/qdcm_calib_data_xiaomi_38_0c_0a_cmd_mode_dsc_dsi_panel.xml
+vendor/etc/qdcm_calib_data_xiaomi_42_02_0b_cmd_mode_dsc_dsi_panel.xml
 
 # Fingerprint
+vendor/lib64/hw/fingerprint.fpc_fod.so:vendor/lib64/hw/fingerprint.fpc_fod.default.so
 vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.default.so
-vendor/lib64/hw/fingerprint.goodix_fod6.so:vendor/lib64/hw/fingerprint.goodix_fod6.default.so
 vendor/lib64/libgf_hal.so
-vendor/lib64/libgf_hal6.so
 
-# HotwordEnrollment
+# HotwordEnrollment - from lmi
 -product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
 -product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
-# Sensors
+# Sensors - from lmi
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
 vendor/bin/init.qcom.sensors.sh
 vendor/bin/sensors.qti
@@ -391,22 +439,17 @@ vendor/lib64/sensors.touch.so
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
 # Sensors configs
-vendor/etc/sensors/config/adux1050_0.json
 vendor/etc/sensors/config/ak991x_dri_0.json
-vendor/etc/sensors/config/bmi26x_0.json
-vendor/etc/sensors/config/bmi26x_0_crt.json
-vendor/etc/sensors/config/bmi26x_0_crt_cfg.json
 vendor/etc/sensors/config/bmp285_0.json
 vendor/etc/sensors/config/lsm6dso_0.json
-vendor/etc/sensors/config/sm8250_adux1050_0.json
 vendor/etc/sensors/config/sm8250_ak991x_0.json
-vendor/etc/sensors/config/sm8250_bmi26x_0.json
 vendor/etc/sensors/config/sm8250_bmp285_0.json
-vendor/etc/sensors/config/sm8250_dual_als.json
 vendor/etc/sensors/config/sm8250_lsm6dso_0.json
-vendor/etc/sensors/config/sm8250_tsl2560_back.json
-vendor/etc/sensors/config/sm8250_tsl2560_dup.json
-vendor/etc/sensors/config/sm8250_tsl2560_pol.json
+vendor/etc/sensors/config/sm8250_power_0.json
+vendor/etc/sensors/config/sm8250_sx933x_0.json
+vendor/etc/sensors/config/sm8250_tcs3408.json
+vendor/etc/sensors/config/sm8250_tcs3701.json
+vendor/etc/sensors/config/sm8250_vl53l1_tof_0.json
 vendor/etc/sensors/config/sns_amd.json
 vendor/etc/sensors/config/sns_amd_sw_disabled.json
 vendor/etc/sensors/config/sns_amd_sw_enabled.json
@@ -436,24 +479,126 @@ vendor/etc/sensors/config/sns_tilt_sw_disabled.json
 vendor/etc/sensors/config/sns_tilt_sw_enabled.json
 vendor/etc/sensors/config/sns_tilt_to_wake.json
 vendor/etc/sensors/config/sns_wrist_pedo.json
-vendor/etc/sensors/config/tsl2560_back.json
-vendor/etc/sensors/config/tsl2560_dup.json
-vendor/etc/sensors/config/tsl2560_pol.json
+vendor/etc/sensors/config/sx933x_0.json
+vendor/etc/sensors/config/tcs3408.json
+vendor/etc/sensors/config/tcs3701.json
+vendor/etc/sensors/config/vl53l1_tof_0.json
+vendor/etc/sensors/proto/descriptor.proto
+vendor/etc/sensors/proto/nanopb.proto
+vendor/etc/sensors/proto/qti_gravity.proto
+vendor/etc/sensors/proto/sns_accel.proto
+vendor/etc/sensors/proto/sns_accel_cal.proto
+vendor/etc/sensors/proto/sns_activity_recognition.proto
+vendor/etc/sensors/proto/sns_ambient_light.proto
+vendor/etc/sensors/proto/sns_ambient_temperature.proto
+vendor/etc/sensors/proto/sns_amd.proto
+vendor/etc/sensors/proto/sns_aont.proto
+vendor/etc/sensors/proto/sns_async_com_port.proto
+vendor/etc/sensors/proto/sns_basic_gestures.proto
+vendor/etc/sensors/proto/sns_bring_to_ear.proto
+vendor/etc/sensors/proto/sns_cal.proto
+vendor/etc/sensors/proto/sns_ccd_ttw.proto
+vendor/etc/sensors/proto/sns_ccd_walk.proto
+vendor/etc/sensors/proto/sns_cct.proto
+vendor/etc/sensors/proto/sns_client.proto
+vendor/etc/sensors/proto/sns_cmc.proto
+vendor/etc/sensors/proto/sns_cmd.proto
+vendor/etc/sensors/proto/sns_da_test.proto
+vendor/etc/sensors/proto/sns_dae.proto
+vendor/etc/sensors/proto/sns_data_acquisition_engine.proto
+vendor/etc/sensors/proto/sns_device_mode.proto
+vendor/etc/sensors/proto/sns_device_orient.proto
+vendor/etc/sensors/proto/sns_diag.proto
+vendor/etc/sensors/proto/sns_diag_sensor.proto
+vendor/etc/sensors/proto/sns_distance_bound.proto
+vendor/etc/sensors/proto/sns_dpc.proto
+vendor/etc/sensors/proto/sns_ext_svc.proto
+vendor/etc/sensors/proto/sns_facing.proto
+vendor/etc/sensors/proto/sns_flicker.proto
+vendor/etc/sensors/proto/sns_fmv.proto
+vendor/etc/sensors/proto/sns_formatter.proto
+vendor/etc/sensors/proto/sns_free_fall.proto
+vendor/etc/sensors/proto/sns_fw.proto
+vendor/etc/sensors/proto/sns_game_rv.proto
+vendor/etc/sensors/proto/sns_geomag_rv.proto
+vendor/etc/sensors/proto/sns_gravity.proto
+vendor/etc/sensors/proto/sns_gyro.proto
+vendor/etc/sensors/proto/sns_gyro_cal.proto
+vendor/etc/sensors/proto/sns_gyro_rot_matrix.proto
+vendor/etc/sensors/proto/sns_hall.proto
+vendor/etc/sensors/proto/sns_har.proto
+vendor/etc/sensors/proto/sns_heart_beat.proto
+vendor/etc/sensors/proto/sns_heart_rate.proto
+vendor/etc/sensors/proto/sns_hinge_angle.proto
+vendor/etc/sensors/proto/sns_humidity.proto
+vendor/etc/sensors/proto/sns_interrupt.proto
+vendor/etc/sensors/proto/sns_mag.proto
+vendor/etc/sensors/proto/sns_mag_cal.proto
+vendor/etc/sensors/proto/sns_mcmd.proto
+vendor/etc/sensors/proto/sns_motion_detect.proto
+vendor/etc/sensors/proto/sns_multishake.proto
+vendor/etc/sensors/proto/sns_oem1.proto
+vendor/etc/sensors/proto/sns_oem2.proto
+vendor/etc/sensors/proto/sns_oem3.proto
+vendor/etc/sensors/proto/sns_offbody_detect.proto
+vendor/etc/sensors/proto/sns_pedometer.proto
+vendor/etc/sensors/proto/sns_pedometer_wrist.proto
+vendor/etc/sensors/proto/sns_physical_sensor_oem_config.proto
+vendor/etc/sensors/proto/sns_physical_sensor_test.proto
+vendor/etc/sensors/proto/sns_pose_6dof.proto
+vendor/etc/sensors/proto/sns_ppg.proto
+vendor/etc/sensors/proto/sns_pressure.proto
+vendor/etc/sensors/proto/sns_proximity.proto
+vendor/etc/sensors/proto/sns_psmd.proto
+vendor/etc/sensors/proto/sns_registry.proto
+vendor/etc/sensors/proto/sns_remote_proc_state.proto
+vendor/etc/sensors/proto/sns_resampler.proto
+vendor/etc/sensors/proto/sns_rgb.proto
+vendor/etc/sensors/proto/sns_rmd.proto
+vendor/etc/sensors/proto/sns_rotv.proto
+vendor/etc/sensors/proto/sns_sar.proto
+vendor/etc/sensors/proto/sns_sensor_temperature.proto
+vendor/etc/sensors/proto/sns_sig_motion.proto
+vendor/etc/sensors/proto/sns_signal_sensor.proto
+vendor/etc/sensors/proto/sns_sim.proto
+vendor/etc/sensors/proto/sns_sim_legacy.proto
+vendor/etc/sensors/proto/sns_std.proto
+vendor/etc/sensors/proto/sns_std_event_gated_sensor.proto
+vendor/etc/sensors/proto/sns_std_sensor.proto
+vendor/etc/sensors/proto/sns_std_type.proto
+vendor/etc/sensors/proto/sns_step_detect.proto
+vendor/etc/sensors/proto/sns_suid.proto
+vendor/etc/sensors/proto/sns_thermopile.proto
+vendor/etc/sensors/proto/sns_threshold.proto
+vendor/etc/sensors/proto/sns_tilt.proto
+vendor/etc/sensors/proto/sns_tilt_to_wake.proto
+vendor/etc/sensors/proto/sns_timer.proto
+vendor/etc/sensors/proto/sns_ultra_violet.proto
+vendor/etc/sensors/proto/sns_wrist_tilt_gesture.proto
+vendor/etc/sensors/judge_calibrated.json
 vendor/etc/sensors/sns_reg_config
 vendor/etc/elliptic_sensor.xml
 
 # Thermal engine
-vendor/etc/thermal-arvr.conf
+vendor/etc/thermal-4k.conf
+vendor/etc/thermal-8k.conf
 vendor/etc/thermal-camera.conf
 vendor/etc/thermal-chg-only.conf
+vendor/etc/thermal-class0.conf
 vendor/etc/thermal-engine.conf
+vendor/etc/thermal-india-camera.conf
+vendor/etc/thermal-india-normal.conf
+vendor/etc/thermal-map-india.conf
 vendor/etc/thermal-map.conf
+vendor/etc/thermal-navigation.conf
 vendor/etc/thermal-nolimits.conf
 vendor/etc/thermal-normal.conf
 vendor/etc/thermal-phone.conf
+vendor/etc/thermal-region-map.conf
 vendor/etc/thermal-tgame.conf
 vendor/etc/thermald-devices.conf
 
 # Vibrator firmware
 vendor/firmware/aw8697_haptic.bin
+vendor/firmware/aw8697_haptic_a.bin
 vendor/firmware/aw8697_rtp_1.bin
