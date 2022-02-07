@@ -194,11 +194,6 @@ vendor/lib64/libsnpe_dsp_domains.so
 vendor/lib64/libsnpe_dsp_domains_system.so
 vendor/lib64/libsnpe_dsp_domains_v2.so
 vendor/lib64/libsnpe_dsp_domains_v2_system.so
-vendor/lib64/libsns_device_mode_stub.so
-vendor/lib64/libsns_fastRPC_util.so
-vendor/lib64/libsns_low_lat_stream_stub.so
-vendor/lib64/libsnsapi.so
-vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libst_soft_isp_calc_exposure_shared.so
 vendor/lib64/libst_soft_isp_shared.so
 vendor/lib64/libswregistrationalgo.so
@@ -415,32 +410,43 @@ vendor/lib64/libgf_hal.so
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
-# Sensors - from lmi
-vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
+# Sensors
 vendor/bin/init.qcom.sensors.sh
 vendor/bin/sensors.qti
-vendor/bin/sscrpcd
 vendor/etc/init/init.vendor.sensors.rc
-vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
 vendor/etc/init/vendor.sensors.qti.rc
-vendor/etc/init/vendor.sensors.sscrpcd.rc
 vendor/etc/sensors/hals.conf
+
+# Sensor Calibrate
+vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
+vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
+vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml
 vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
-vendor/lib64/libnotifyaudiohal.so
 vendor/lib64/libsensorcal.so
+vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
+
+# Sensor RPC
+vendor/bin/sscrpcd
+vendor/etc/init/vendor.sensors.sscrpcd.rc
+vendor/lib64/libssc_default_listener.so
+
+# Sensors (Elliptic)
+vendor/lib64/libnotifyaudiohal.so
+vendor/lib64/libultrasound.so
+vendor/lib64/sensors.elliptic.so
+
+# Sensors (SSC)
 vendor/lib64/libsensorslog.so
-vendor/lib64/libsns_device_mode_stub.so
 vendor/lib64/libsns_fastRPC_util.so
 vendor/lib64/libsns_low_lat_stream_stub.so
 vendor/lib64/libsnsapi.so
 vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libssc.so
-vendor/lib64/libssc_default_listener.so
-vendor/lib64/libultrasound.so
-vendor/lib64/sensors.elliptic.so
 vendor/lib64/sensors.ssc.so
+
+# Sensors (Misc)
+vendor/lib64/sensors.mius.proximity.so
 vendor/lib64/sensors.touch.so
-vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
 # Sensors configs
 vendor/etc/sensors/config/ak991x_dri_0.json
