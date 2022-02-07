@@ -40,4 +40,3 @@ ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 vendor.lineage.fod.position_x=441
 vendor.lineage.fod.position_y=1808
 vendor.lineage.fod.size=197
-vendor.lineage.fod.enable=true
