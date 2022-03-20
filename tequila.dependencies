@@ -1,0 +1,15 @@
+[
+  {
+    "repository": "platform_vendor_xiaomi_umi",
+    "target_path": "vendor/xiaomi/umi",
+    "remote": "tequila-gitlab"
+  },
+  {
+    "repository": "platform_kernel_xiaomi_umi",
+    "target_path": "kernel/xiaomi/sm8250"
+  },
+  {
+    "repository": "platform_hardware_xiaomi",
+    "target_path": "hardware/xiaomi"
+  }
+]
