@@ -69,14 +69,6 @@ vendor/lib/libaudioroute_ext.so
 vendor/lib/libhdmipassthru.so
 vendor/lib/libresampler.so
 vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
-vendor/lib64/hw/audio.primary.kona.so
-vendor/lib64/libaudio_log_utils.so
-vendor/lib64/libaudioconfigstore.so
-vendor/lib64/libaudioparsers.so
-vendor/lib64/libaudioroute_ext.so
-vendor/lib64/libhdmipassthru.so
-vendor/lib64/libresampler.so
-vendor/lib64/vendor.qti.hardware.audiohalext@1.0.so
 
 # Camera
 vendor/lib64/camera/com.qti.actuator.umi_dw9800_ov16e10.so
