@@ -41,6 +41,7 @@
 # Hals
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.touchfeature@1\.0-service       u:object_r:hal_touchfeature_default_exec:s0
 /vendor/bin/mlipayd@1.1                                                  u:object_r:hal_mlipay_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.powershare@1\.0-service\.umi                           u:object_r:hal_lineage_powershare_default_exec:s0
 
 # MSADP partition
 /dev/block/platform/soc/1d84000.ufshc/by-name/msadp         u:object_r:vendor_efs_boot_dev:s0
@@ -61,6 +62,9 @@
 
 # Vibrator
 /vendor/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.xiaomi_umi                                                                 u:object_r:hal_vibrator_default_exec:s0
+
+# Wireless Charging Supply
+/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5/power_supply/wireless(/.*)?   u:object_r:vendor_sysfs_battery_supply:s0
 
 # Wlan
 /vendor/bin/nv_mac                                          u:object_r:vendor_wcnss_service_exec:s0

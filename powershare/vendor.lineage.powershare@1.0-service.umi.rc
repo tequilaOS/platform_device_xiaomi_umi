@@ -1,0 +1,8 @@
+on boot 
+    chown system system /sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5/power_supply/wireless/reverse_chg_mode
+    chmod 0644 /sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5/power_supply/wireless/reverse_chg_mode
+
+service vendor.powershare-hal-1-0 /vendor/bin/hw/vendor.lineage.powershare@1.0-service.umi
+    class hal
+    user system
+    group system
