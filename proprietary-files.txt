@@ -1,4 +1,4 @@
-# Unpinned blobs from umi-user 11 RKQ1.200826.002 V12.5.10.0.RJBCNXM release-keys
+# Unpinned blobs from umi-user 12 RKQ1.211001.001 V13.0.4.0.SJBCNXM release-keys
 
 # ACDB
 vendor/etc/acdbdata/Tutu/Tutu_Bluetooth_cal.acdb
@@ -166,6 +166,7 @@ vendor/lib64/libmialgo_rfs.so
 vendor/lib64/libmialgo_sd.so
 vendor/lib64/libmialgo_utils.so
 vendor/lib64/libmialgo_video_colourkeeping.so
+vendor/lib64/libmialgo_video_enhance.so
 vendor/lib64/libmialgo_video_seg.so
 vendor/lib64/libmibokeh_845_video.so
 vendor/lib64/libmibokeh_855.so
@@ -302,6 +303,18 @@ vendor/lib64/camera/components/libubifocus.so
 
 # Camera configs
 vendor/etc/camera/misupermoon/MobNetv2TF_0.35_iter200000_zoom2.5x_h1500w2000.dlc
+vendor/etc/camera/102_SummerDay.png
+vendor/etc/camera/103_Fantasy.png
+vendor/etc/camera/104_Meet.png
+vendor/etc/camera/105_WindSing.png
+vendor/etc/camera/106_Lost.png
+vendor/etc/camera/107_Central.png
+vendor/etc/camera/108_NorthernEurope.png
+vendor/etc/camera/109_Rome.png
+vendor/etc/camera/110_BlackGold.png
+vendor/etc/camera/111_GreenOrange.png
+vendor/etc/camera/112_CyberPunk.png
+vendor/etc/camera/113_BlackIce.png
 vendor/etc/camera/CFR_para_HD_V03.bin
 vendor/etc/camera/CFR_para_T_2x_V03.bin
 vendor/etc/camera/CFR_para_UW_V01.bin
@@ -370,6 +383,7 @@ vendor/etc/qdcm_calib_data_nt35597_cmd_mode_dsi_truly_panel_with_DSC.xml
 vendor/etc/qdcm_calib_data_nt35597_video_mode_dsi_truly_panel_with_DSC.xml
 vendor/etc/qdcm_calib_data_nt35695b_truly_fhd_command_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_nt36525_video_mode_dsi_truly_panel.xml
+vendor/etc/qdcm_calib_data_nt36672e_90Hz_fhd_plus_video_mode_panel_with_DSC.xml
 vendor/etc/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_120HZ_panel_with_DSC.xml
 vendor/etc/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_60HZ_panel_with_DSC.xml
 vendor/etc/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_90HZ_panel_with_DSC.xml
@@ -459,6 +473,7 @@ vendor/etc/sensors/config/sns_ccd_v2_walk.json
 vendor/etc/sensors/config/sns_ccd_v3_walk.json
 vendor/etc/sensors/config/sns_cm.json
 vendor/etc/sensors/config/sns_dae.json
+vendor/etc/sensors/config/sns_dbtap.json
 vendor/etc/sensors/config/sns_device_orient.json
 vendor/etc/sensors/config/sns_diag_filter.json
 vendor/etc/sensors/config/sns_dpc.json
@@ -468,6 +483,7 @@ vendor/etc/sensors/config/sns_gyro_cal.json
 vendor/etc/sensors/config/sns_mag_cal.json
 vendor/etc/sensors/config/sns_mag_cal_legacy.json
 vendor/etc/sensors/config/sns_nonui.json
+vendor/etc/sensors/config/sns_oem13.json
 vendor/etc/sensors/config/sns_pedometer.json
 vendor/etc/sensors/config/sns_rmd.json
 vendor/etc/sensors/config/sns_rotv.json
@@ -484,7 +500,6 @@ vendor/etc/sensors/config/tcs3701.json
 vendor/etc/sensors/config/vl53l1_tof_0.json
 vendor/etc/sensors/proto/descriptor.proto
 vendor/etc/sensors/proto/nanopb.proto
-vendor/etc/sensors/proto/qti_gravity.proto
 vendor/etc/sensors/proto/sns_accel.proto
 vendor/etc/sensors/proto/sns_accel_cal.proto
 vendor/etc/sensors/proto/sns_activity_recognition.proto
@@ -492,25 +507,20 @@ vendor/etc/sensors/proto/sns_ambient_light.proto
 vendor/etc/sensors/proto/sns_ambient_temperature.proto
 vendor/etc/sensors/proto/sns_amd.proto
 vendor/etc/sensors/proto/sns_aont.proto
-vendor/etc/sensors/proto/sns_async_com_port.proto
 vendor/etc/sensors/proto/sns_basic_gestures.proto
 vendor/etc/sensors/proto/sns_bring_to_ear.proto
 vendor/etc/sensors/proto/sns_cal.proto
-vendor/etc/sensors/proto/sns_ccd_ttw.proto
-vendor/etc/sensors/proto/sns_ccd_walk.proto
 vendor/etc/sensors/proto/sns_cct.proto
 vendor/etc/sensors/proto/sns_client.proto
 vendor/etc/sensors/proto/sns_cmc.proto
-vendor/etc/sensors/proto/sns_cmd.proto
 vendor/etc/sensors/proto/sns_da_test.proto
-vendor/etc/sensors/proto/sns_dae.proto
-vendor/etc/sensors/proto/sns_data_acquisition_engine.proto
 vendor/etc/sensors/proto/sns_device_mode.proto
 vendor/etc/sensors/proto/sns_device_orient.proto
 vendor/etc/sensors/proto/sns_diag.proto
 vendor/etc/sensors/proto/sns_diag_sensor.proto
-vendor/etc/sensors/proto/sns_distance_bound.proto
+vendor/etc/sensors/proto/sns_direct_channel.proto
 vendor/etc/sensors/proto/sns_dpc.proto
+vendor/etc/sensors/proto/sns_eqm.proto
 vendor/etc/sensors/proto/sns_ext_svc.proto
 vendor/etc/sensors/proto/sns_facing.proto
 vendor/etc/sensors/proto/sns_flicker.proto
@@ -530,16 +540,14 @@ vendor/etc/sensors/proto/sns_heart_beat.proto
 vendor/etc/sensors/proto/sns_heart_rate.proto
 vendor/etc/sensors/proto/sns_hinge_angle.proto
 vendor/etc/sensors/proto/sns_humidity.proto
-vendor/etc/sensors/proto/sns_interrupt.proto
 vendor/etc/sensors/proto/sns_mag.proto
 vendor/etc/sensors/proto/sns_mag_cal.proto
-vendor/etc/sensors/proto/sns_mcmd.proto
-vendor/etc/sensors/proto/sns_motion_detect.proto
-vendor/etc/sensors/proto/sns_multishake.proto
 vendor/etc/sensors/proto/sns_oem1.proto
+vendor/etc/sensors/proto/sns_oem15.proto
 vendor/etc/sensors/proto/sns_oem2.proto
 vendor/etc/sensors/proto/sns_oem3.proto
 vendor/etc/sensors/proto/sns_offbody_detect.proto
+vendor/etc/sensors/proto/sns_ois_manager.proto
 vendor/etc/sensors/proto/sns_pedometer.proto
 vendor/etc/sensors/proto/sns_pedometer_wrist.proto
 vendor/etc/sensors/proto/sns_physical_sensor_oem_config.proto
@@ -550,7 +558,6 @@ vendor/etc/sensors/proto/sns_pressure.proto
 vendor/etc/sensors/proto/sns_proximity.proto
 vendor/etc/sensors/proto/sns_psmd.proto
 vendor/etc/sensors/proto/sns_registry.proto
-vendor/etc/sensors/proto/sns_remote_proc_state.proto
 vendor/etc/sensors/proto/sns_resampler.proto
 vendor/etc/sensors/proto/sns_rgb.proto
 vendor/etc/sensors/proto/sns_rmd.proto
@@ -558,9 +565,6 @@ vendor/etc/sensors/proto/sns_rotv.proto
 vendor/etc/sensors/proto/sns_sar.proto
 vendor/etc/sensors/proto/sns_sensor_temperature.proto
 vendor/etc/sensors/proto/sns_sig_motion.proto
-vendor/etc/sensors/proto/sns_signal_sensor.proto
-vendor/etc/sensors/proto/sns_sim.proto
-vendor/etc/sensors/proto/sns_sim_legacy.proto
 vendor/etc/sensors/proto/sns_std.proto
 vendor/etc/sensors/proto/sns_std_event_gated_sensor.proto
 vendor/etc/sensors/proto/sns_std_sensor.proto
@@ -571,10 +575,10 @@ vendor/etc/sensors/proto/sns_thermopile.proto
 vendor/etc/sensors/proto/sns_threshold.proto
 vendor/etc/sensors/proto/sns_tilt.proto
 vendor/etc/sensors/proto/sns_tilt_to_wake.proto
-vendor/etc/sensors/proto/sns_timer.proto
 vendor/etc/sensors/proto/sns_ultra_violet.proto
 vendor/etc/sensors/proto/sns_wrist_tilt_gesture.proto
 vendor/etc/sensors/judge_calibrated.json
+vendor/etc/sensors/sensor_diag.cfg
 vendor/etc/sensors/sns_reg_config
 vendor/etc/elliptic_sensor.xml
 
@@ -587,11 +591,17 @@ vendor/etc/thermal-class0.conf
 vendor/etc/thermal-engine.conf
 vendor/etc/thermal-india-camera.conf
 vendor/etc/thermal-india-normal.conf
+vendor/etc/thermal-india-per-camera.conf
+vendor/etc/thermal-india-per-normal.conf
 vendor/etc/thermal-map-india.conf
 vendor/etc/thermal-map.conf
 vendor/etc/thermal-navigation.conf
 vendor/etc/thermal-nolimits.conf
 vendor/etc/thermal-normal.conf
+vendor/etc/thermal-per-camera.conf
+vendor/etc/thermal-per-class0.conf
+vendor/etc/thermal-per-navigation.conf
+vendor/etc/thermal-per-normal.conf
 vendor/etc/thermal-phone.conf
 vendor/etc/thermal-region-map.conf
 vendor/etc/thermal-tgame.conf
