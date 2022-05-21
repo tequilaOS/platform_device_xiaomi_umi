@@ -1,0 +1,5 @@
+runtime_resource_overlay {
+    name: "xiaomi_umi_hwlevel_p01_overlay",
+    sdk_version: "current",
+    vendor: true
+}
