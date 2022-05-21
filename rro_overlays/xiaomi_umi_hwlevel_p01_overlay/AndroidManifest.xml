@@ -1,11 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.xiaomi_sm8250.umi.overlay.hwlevel_p01"
+    package="org.xiaomi_sm8250.umi.overlay.hwlevel_mp"
     android:versionCode="1"
     android:versionName="1.0">
     <application android:hasCode="false" />
     <overlay
       android:requiredSystemPropertyName="ro.boot.hwlevel"
-      android:requiredSystemPropertyValue="P0.1"
+      android:requiredSystemPropertyValue="MP"
       android:targetPackage="android"
       android:isStatic="true"
       android:priority="2"/>
