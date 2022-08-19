@@ -145,6 +145,9 @@ PRODUCT_PACKAGES += \
     libMegviiFacepp-0.5.2 \
     libmegface
 
+PRODUCT_PACKAGES += \
+    libpiex_shim
+
 # Component overrides
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
@@ -375,10 +378,6 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
     android.hardware.sensors@1.0-service \
     libsensorndkbridge
-
-# Shims
-PRODUCT_PACKAGES += \
-    lib-watermarkshim
 
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
