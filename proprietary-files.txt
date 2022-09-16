@@ -447,7 +447,6 @@ vendor/bin/init.qcom.sensors.sh
 vendor/bin/sensors.qti
 vendor/etc/init/init.vendor.sensors.rc
 vendor/etc/init/vendor.sensors.qti.rc
-vendor/etc/sensors/hals.conf
 
 # Sensor Calibrate
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
