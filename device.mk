@@ -5,7 +5,7 @@
 #
 
 # Fingerprint
-TARGET_HAS_FOD := true
+TARGET_HAS_UDFPS := true
 
 # Inherit from sm8250-common
 $(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
