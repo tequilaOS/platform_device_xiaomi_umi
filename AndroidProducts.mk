@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_umi.mk
+    $(LOCAL_DIR)/tequila_umi.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_umi-eng \
-    lineage_umi-user \
-    lineage_umi-userdebug
+    tequila_umi-eng \
+    tequila_umi-user \
+    tequila_umi-userdebug
