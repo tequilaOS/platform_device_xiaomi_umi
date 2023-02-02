@@ -1,4 +1,4 @@
-# Unpinned blobs from umi-user 12 RKQ1.211001.001 V13.0.6.0.SJBCNXM release-keys
+# Unpinned blobs from umi-user 12 RKQ1.211001.001 V13.0.8.0.SJBCNXM release-keys
 
 # ACDB
 vendor/etc/acdbdata/Tutu/Tutu_Bluetooth_cal.acdb
