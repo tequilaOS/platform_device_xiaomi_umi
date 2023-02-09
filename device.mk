@@ -13,6 +13,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/umi/umi-vendor.mk)
 
+# MiuiCamera
+$(call inherit-product, vendor/xiaomi/umi-miuicamera/products/miuicamera.mk)
+
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
