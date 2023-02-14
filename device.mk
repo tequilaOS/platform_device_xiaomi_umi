@@ -391,6 +391,10 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libxml2
 
+# Screen
+TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 2340
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
