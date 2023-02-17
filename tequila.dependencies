@@ -13,7 +13,7 @@
     "remote": "tequila-gitlab"
   },
   {
-    "repository" "platform_vendor_xiaomi_umi-miuicamera",
+    "repository": "platform_vendor_xiaomi_umi-miuicamera",
     "target_path": "vendor/xiaomi/umi-miuicamera",
     "remote": "tequila-gitlab"
   }
