@@ -5,7 +5,8 @@
   },
   {
     "repository": "platform_kernel_xiaomi_sm8250",
-    "target_path": "kernel/xiaomi/sm8250"
+    "target_path": "kernel/xiaomi/sm8250",
+    "revision": "tortilla-umi"
   },
   {
     "repository": "platform_vendor_xiaomi_umi",
