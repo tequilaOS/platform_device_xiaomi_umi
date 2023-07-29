@@ -41,7 +41,7 @@
 # Hals
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.touchfeature@1\.0-service       u:object_r:hal_touchfeature_default_exec:s0
 /vendor/bin/mlipayd@1.1                                                  u:object_r:hal_mlipay_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.lineage\.powershare@1\.0-service\.umi                           u:object_r:hal_lineage_powershare_default_exec:s0
+/vendor/bin/hw/vendor\.lineage\.powershare@1\.0-service\.xiaomi          u:object_r:hal_lineage_powershare_default_exec:s0
 
 # MSADP partition
 /dev/block/platform/soc/1d84000.ufshc/by-name/msadp         u:object_r:vendor_efs_boot_dev:s0

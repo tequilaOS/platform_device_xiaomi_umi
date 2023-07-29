@@ -369,7 +369,7 @@ PRODUCT_PACKAGES += \
 
 # Powershare
 PRODUCT_PACKAGES += \
-    vendor.lineage.powershare@1.0-service.umi
+    vendor.lineage.powershare@1.0-service.xiaomi
 
 # QMI
 TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
