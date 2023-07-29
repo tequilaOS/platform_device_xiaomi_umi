@@ -4,8 +4,8 @@
     "target_path": "hardware/xiaomi"
   },
   {
-    "repository": "platform_kernel_xiaomi_umi",
-    "target_path": "kernel/xiaomi/umi"
+    "repository": "platform_kernel_xiaomi_sm8250",
+    "target_path": "kernel/xiaomi/sm8250"
   },
   {
     "repository": "platform_vendor_xiaomi_umi",
