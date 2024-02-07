@@ -1,4 +1,4 @@
-# Unpinned blobs from umi-user 12 RKQ1.211001.001 V13.0.8.0.SJBCNXM release-keys
+# Unpinned blobs from umi-user 13 RKQ1.211001.001 V14.0.5.0.TJBMIXM release-keys
 
 # ACDB
 vendor/etc/acdbdata/Tutu/Tutu_Bluetooth_cal.acdb
@@ -64,6 +64,7 @@ vendor/firmware/cs35l41-dsp1-spk-prot.wmfw
 vendor/lib/hw/audio.primary.kona.so
 vendor/lib/vndk/libxlog.so
 vendor/lib/libaudio_log_utils.so
+vendor/lib/libaudiocloudctrl.so
 vendor/lib/libaudioconfigstore.so
 vendor/lib/libaudioparsers.so
 vendor/lib/libaudioroute_ext.so
@@ -103,10 +104,7 @@ vendor/lib64/camera/com.qti.tuned.umi_semco_s5khmx.bin
 vendor/lib64/camera/com.qti.tuned.umi_sunny_gc02m1_depth.bin
 vendor/lib64/camera/com.qti.tuned.umi_sunny_gc02m1_macro.bin
 vendor/lib64/camera/com.qti.tuned.umi_sunny_ov13b10.bin
-vendor/lib64/camera/com.qti.tuned.umi_sunny_ov16e10.bin
 vendor/lib64/camera/com.qti.tuned.umi_sunny_s5k3t2.bin
-vendor/lib64/camera/com.qti.tuned.umi_sunny_s5k5e8yx_depth.bin
-vendor/lib64/camera/com.qti.tuned.umi_sunny_s5k5e8yx_macro.bin
 vendor/lib64/camera/fdconfigpreview.bin
 vendor/lib64/camera/fdconfigpreviewlite.bin
 vendor/lib64/camera/fdconfigvideo.bin
@@ -415,11 +413,11 @@ vendor/lib64/hw/fingerprint.fpc_fod.so:vendor/lib64/hw/fingerprint.fpc_fod.defau
 vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.default.so
 vendor/lib64/libgf_hal.so
 
-# HotwordEnrollment - from umi V13.0.4.0.SJBMIXM
--product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk|1f9513ba807bced528203f829eb9a8249e915d38
--product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk|b53e90faf861f36c3b71f7f15f54960b1e9d6313
-system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|563a58554d9c0dd0608552b644fbf74519a447bb
--system_ext/framework/com.android.hotwordenrollment.common.util.jar|c764b636e0be426a66be09dd08ab9c1921327ef0
+# HotwordEnrollment
+-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk
+-product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
+system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
 # IPA firmware
 vendor/etc/init/ipa_fws.rc
@@ -516,6 +514,7 @@ vendor/etc/sensors/config/sns_pedometer.json
 vendor/etc/sensors/config/sns_rmd.json
 vendor/etc/sensors/config/sns_rotv.json
 vendor/etc/sensors/config/sns_sar_algo.json
+vendor/etc/sensors/config/sns_screen_down.json
 vendor/etc/sensors/config/sns_smd.json
 vendor/etc/sensors/config/sns_tilt.json
 vendor/etc/sensors/config/sns_tilt_sw_disabled.json
@@ -605,6 +604,7 @@ vendor/etc/sensors/proto/sns_tilt.proto
 vendor/etc/sensors/proto/sns_tilt_to_wake.proto
 vendor/etc/sensors/proto/sns_ultra_violet.proto
 vendor/etc/sensors/proto/sns_wrist_tilt_gesture.proto
+vendor/etc/sensors/calibratedCheck.json
 vendor/etc/sensors/judge_calibrated.json
 vendor/etc/sensors/sensor_diag.cfg
 vendor/etc/sensors/sns_reg_config
